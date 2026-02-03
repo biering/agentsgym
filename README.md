@@ -29,6 +29,8 @@ Then the rest of the file is the **prompt content**.
 
 ## How to add a new prompt
 
+If you're using GitHub in the browser, you can start a new prompt file directly here: [Create a new prompt in `content/`](https://github.com/biering/agentsgym/new/main/content)
+
 1) Copy `template.md` → `content/<your-prompt>.md`
 2) Name the file **kebab-case** (stable names reduce churn in Git diffs)
 3) Fill in frontmatter:

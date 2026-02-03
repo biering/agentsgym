@@ -13,107 +13,43 @@ lastUpdated: "2026-02-03"
 # - Choose the most stable/broad categories that fit.
 
 categories:
+  - slug: openclaw
+    title: OpenClaw
+    description: Prompts and workflows specific to the OpenClaw internal workspace/tooling environment.
+
+  - slug: workspace
+    title: Workspace
+    description: Repo-as-CRM structures, note systems, conventions, and information architecture.
+
+  - slug: ops
+    title: Operations
+    description: Operating procedures, reliability practices, runbooks, and recurring workflows.
+
   - slug: agents
     title: Agents
-    description: Agent design, orchestration, prompting patterns, and evals.
-
-  - slug: analysis
-    title: Analysis
-    description: Reasoning-heavy prompts; synthesis; decomposition; decision support.
-
-  - slug: automation
-    title: Automation
-    description: Repetitive workflow automation; scripts; operational runbooks.
-
-  - slug: calendar
-    title: Calendar
-    description: Time-based logs, retros, reviews, daily/weekly workflows.
-
-  - slug: coding
-    title: Coding
-    description: Implementation-oriented prompts across languages/frameworks.
-
-  - slug: data
-    title: Data
-    description: ETL, analytics, metrics, data modeling, reporting.
-
-  - slug: debugging
-    title: Debugging
-    description: Troubleshooting, incident response, root-cause analysis, fixes.
-
-  - slug: design
-    title: Design
-    description: UX/UI, interaction design, information architecture, content design.
-
-  - slug: documentation
-    title: Documentation
-    description: Writing, editing, docs systems, knowledge management.
-
-  - slug: efforts
-    title: Efforts
-    description: Projects, commitments, execution systems, delivery workflows.
-
-  - slug: evaluation
-    title: Evaluation
-    description: Testing prompts, grading rubrics, benchmarking, model/tool evals.
-
-  - slug: finance
-    title: Finance
-    description: Budgeting, forecasting, pricing, cost analysis.
-
-  - slug: github
-    title: GitHub
-    description: Issues/PRs, repo workflows, CI/CD conventions, contribution flows.
-
-  - slug: management
-    title: Management
-    description: Planning, prioritization, roadmaps, coordination, communication.
+    description: Agent roles, orchestration, prompting patterns, and operating contracts.
 
   - slug: memory
     title: Memory
     description: Memory systems, recall, knowledge stores, summarization and persistence patterns.
 
-  - slug: openclaw
-    title: OpenClaw
-    description: Prompts and workflows specific to the OpenClaw internal workspace/tooling environment.
+  - slug: skill
+    title: Skill
+    description: "Reusable agent skills: small, composable capabilities with clear inputs/outputs."
 
-  - slug: ops
-    title: Operations
-    description: Operating procedures, reliability, process, runbooks.
+  - slug: documentation
+    title: Documentation
+    description: Living docs, standards, editing/rewriting, knowledge capture, and maintenance.
 
-  - slug: planning
-    title: Planning
-    description: Plans, milestones, sequencing, risk management.
+  - slug: coding
+    title: Coding
+    description: Implementation prompts (build/change code, refactors, scaffolds, integrations).
 
-  - slug: product
-    title: Product
-    description: Product thinking, requirements, user stories, strategy.
-
-  - slug: reference
-    title: Reference
-    description: Checklists, cheatsheets, reusable snippets, canonical notes.
-
-  - slug: research
-    title: Research
-    description: Exploration, literature review, discovery, competitive analysis.
+  - slug: evaluation
+    title: Evaluation
+    description: Prompt/agent testing, grading rubrics, benchmarks, regression checks.
 
   - slug: security
     title: Security
-    description: Threat modeling, secure coding, privacy, access control.
-
-  - slug: skill
-    title: Skill
-    description: "Reusable agent “skills”: small, composable capabilities with clear inputs/outputs."
-
-  - slug: system
-    title: System
-    description: Repo-level conventions, templates, standards, meta documentation.
-
-  - slug: writing
-    title: Writing
-    description: Drafting, editing, rewriting, tone/style prompts.
-
-  - slug: workspace
-    title: Workspace
-    description: Folder structures, repo-as-CRM, note systems, conventions.
+    description: Threat modeling, secure practices, privacy, and access control.
 
