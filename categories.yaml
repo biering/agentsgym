@@ -1,0 +1,119 @@
+schemaVersion: 1
+lastUpdated: "2026-02-03"
+
+# Canonical list of allowed category slugs for prompt frontmatter.
+# Use these values in prompt notes:
+#
+# ---
+# categories: ["workspace", "ops", "openclaw"]
+# ---
+#
+# Notes:
+# - Prefer 1-4 categories per prompt.
+# - Choose the most stable/broad categories that fit.
+
+categories:
+  - slug: agents
+    title: Agents
+    description: Agent design, orchestration, prompting patterns, and evals.
+
+  - slug: analysis
+    title: Analysis
+    description: Reasoning-heavy prompts; synthesis; decomposition; decision support.
+
+  - slug: automation
+    title: Automation
+    description: Repetitive workflow automation; scripts; operational runbooks.
+
+  - slug: calendar
+    title: Calendar
+    description: Time-based logs, retros, reviews, daily/weekly workflows.
+
+  - slug: coding
+    title: Coding
+    description: Implementation-oriented prompts across languages/frameworks.
+
+  - slug: data
+    title: Data
+    description: ETL, analytics, metrics, data modeling, reporting.
+
+  - slug: debugging
+    title: Debugging
+    description: Troubleshooting, incident response, root-cause analysis, fixes.
+
+  - slug: design
+    title: Design
+    description: UX/UI, interaction design, information architecture, content design.
+
+  - slug: documentation
+    title: Documentation
+    description: Writing, editing, docs systems, knowledge management.
+
+  - slug: efforts
+    title: Efforts
+    description: Projects, commitments, execution systems, delivery workflows.
+
+  - slug: evaluation
+    title: Evaluation
+    description: Testing prompts, grading rubrics, benchmarking, model/tool evals.
+
+  - slug: finance
+    title: Finance
+    description: Budgeting, forecasting, pricing, cost analysis.
+
+  - slug: github
+    title: GitHub
+    description: Issues/PRs, repo workflows, CI/CD conventions, contribution flows.
+
+  - slug: management
+    title: Management
+    description: Planning, prioritization, roadmaps, coordination, communication.
+
+  - slug: memory
+    title: Memory
+    description: Memory systems, recall, knowledge stores, summarization and persistence patterns.
+
+  - slug: openclaw
+    title: OpenClaw
+    description: Prompts and workflows specific to the OpenClaw internal workspace/tooling environment.
+
+  - slug: ops
+    title: Operations
+    description: Operating procedures, reliability, process, runbooks.
+
+  - slug: planning
+    title: Planning
+    description: Plans, milestones, sequencing, risk management.
+
+  - slug: product
+    title: Product
+    description: Product thinking, requirements, user stories, strategy.
+
+  - slug: reference
+    title: Reference
+    description: Checklists, cheatsheets, reusable snippets, canonical notes.
+
+  - slug: research
+    title: Research
+    description: Exploration, literature review, discovery, competitive analysis.
+
+  - slug: security
+    title: Security
+    description: Threat modeling, secure coding, privacy, access control.
+
+  - slug: skill
+    title: Skill
+    description: "Reusable agent “skills”: small, composable capabilities with clear inputs/outputs."
+
+  - slug: system
+    title: System
+    description: Repo-level conventions, templates, standards, meta documentation.
+
+  - slug: writing
+    title: Writing
+    description: Drafting, editing, rewriting, tone/style prompts.
+
+  - slug: workspace
+    title: Workspace
+    description: Folder structures, repo-as-CRM, note systems, conventions.
+
