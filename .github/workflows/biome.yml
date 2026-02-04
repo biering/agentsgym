@@ -1,0 +1,25 @@
+name: Biome (format + lint)
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Enable pnpm (Corepack)
+        run: corepack enable
+
+      - name: Biome CI (agentsgym + agentsgym-server)
+        run: pnpm dlx @biomejs/biome@2.3.11 ci agentsgym agentsgym-server
+
