@@ -1,0 +1,27 @@
+{
+  "name": "agentsgym",
+  "version": "0.1.0",
+  "description": "CLI to search, fetch, and install agent skills from an AgentsGym server.",
+  "type": "module",
+  "bin": {
+    "agentsgym": "bin/agentsgym.js"
+  },
+  "files": [
+    "bin/"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biering/agentsgym.git"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "yaml": "^2.4.5"
+  }
+}
+

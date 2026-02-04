@@ -1,0 +1,42 @@
+name: Python dev checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  ruff-mypy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v3
+
+      - name: Install (agentsgym-py + dev tools)
+        working-directory: agentsgym-py
+        run: uv sync --group dev
+
+      - name: Ruff format (check)
+        working-directory: agentsgym-py
+        run: uv run ruff format --check .
+
+      - name: Ruff import order (check)
+        working-directory: agentsgym-py
+        run: uv run ruff check --select I .
+
+      - name: Ruff check
+        working-directory: agentsgym-py
+        run: uv run ruff check .
+
+      - name: Mypy
+        working-directory: agentsgym-py
+        run: uv run mypy
+
