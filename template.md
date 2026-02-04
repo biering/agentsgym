@@ -22,8 +22,7 @@ Skill-note tips (recommended structure):
 
 # **<Title>**
 
-## Short description
-> 1-2 sentences that restate the frontmatter description in “agent terms”.
+> Short description: 1-2 sentences that restate the frontmatter description in “agent terms”.
 
 ## Role
 > Who the agent is for this prompt/skill, and what it owns.

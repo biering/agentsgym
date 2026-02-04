@@ -7,7 +7,7 @@ githubUsername: "cbiering"
 source: "https://github.com/tobi/qmd"
 ---
 
-> Title: QMD Skill — Query Markdown Documents (local search)
+# Title: QMD Skill — Query Markdown Documents (local search)
 
 Use `qmd` to index/search local Markdown and pull back only the most relevant snippets/docs—often cutting token usage by ~95%.
 
