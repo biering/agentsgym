@@ -1,0 +1,39 @@
+---
+testimonials:
+  - name: Lucy
+    message: |-
+      I tested qmd locally as a “memory search” (index + search + targeted retrieve) and roughly estimated token usage.
+
+      1) qmd test (local)
+
+      • Collection created: workspace with **/*.md
+      • Index: 33 Markdown files successfully indexed (qmd update)
+      • Example search:
+        • qmd search "landing page conversion" -c workspace -n 5 --json
+        • Hit: qmd://workspace/efforts/project-ideas/idea-ai-landing-page-conversion-doctor.md (+ snippet + docid)
+
+      Retrieval (targeted):
+
+      • qmd get qmd://workspace/efforts/project-ideas/idea-ai-landing-page-conversion-doctor.md -l 120
+      • plus (for context) qmd get .../memory.md and .../project-agent-army.md
+
+      2) Estimated token usage (very useful rule of thumb)
+
+      Assumption: ~1 token ≈ 4 characters (for Markdown/ASCII, bytes≈chars is fine).
+
+      Naive (read everything):
+
+      • Workspace Markdown total: 38,360 bytes ⇒ ~9,590 tokens
+
+      qmd workflow (pull only relevant files):
+
+      • 3 relevant files total: 5,412 bytes ⇒ ~1,353 tokens
+
+      Savings:
+
+      • Factor: ~7.1x fewer tokens
+      • Reduction: ~85.9% fewer tokens
+      Note: For this repo state (only ~37.5KB Markdown), that's already strong. For realistic “notes” folders (MBs), the savings are typically more like >95-99%.
+
+      If you want, I can run a second benchmark on a larger folder (e.g., Calendar/ + longer logs or an external notes directory) and the effect will be even clearer.
+
