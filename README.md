@@ -44,3 +44,25 @@ PRs are welcome. The bar is “easy to understand + easy to search + easy to dif
   - Avoid massive rewrites unless necessary
   - Don't add binaries (images, PDFs) unless there's a strong reason
 - **Categories/Attribution** (recommended): store in `metadata.agentsgym.categories`, `metadata.agentsgym.author`, `metadata.agentsgym.githubUsername`.
+
+## Install a skill (one-liner)
+
+If you host this repo as a Nitro server, install a skill into the current workspace like:
+
+```bash
+mkdir -p "./skills/qmd" && curl -fsSL "https://YOUR_HOST/api/skills/openclaw-skill?slug=qmd" -o "./skills/qmd/SKILL.md"
+```
+
+You can also ask the server to generate the exact command for you:
+
+```bash
+curl -fsSL "https://YOUR_HOST/api/skills/install-command?slug=qmd"
+```
+
+## CLI install (agent-friendly)
+
+This repo includes a tiny CLI that downloads a skill and writes it to `./skills/<slug>/SKILL.md`:
+
+```bash
+AGENTSGYM_BASE_URL="https://YOUR_HOST" npx agentsgym install qmd
+```

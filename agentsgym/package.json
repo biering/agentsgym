@@ -1,0 +1,30 @@
+{
+  "name": "agentsgym",
+  "version": "0.1.0",
+  "description": "CLI to install OpenClaw-compatible skills from an agentsgym server.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biering/agentsgym.git",
+    "directory": "agentsgym"
+  },
+  "homepage": "https://github.com/biering/agentsgym",
+  "bugs": {
+    "url": "https://github.com/biering/agentsgym/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "agentsgym": "bin/agentsgym.mjs"
+  },
+  "files": [
+    "bin/",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
+
