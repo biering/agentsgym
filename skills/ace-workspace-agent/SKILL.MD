@@ -3,7 +3,7 @@ title: "ACE Agent Memory — Atlas • Calendar • Efforts"
 description: "An agent prompt to implement and run the ACE system inside a Git-versioned workspace: create the folder framework, maintain living docs, enforce metadata patterns, and iterate workflows."
 categories: ["workspace", "ops", "openclaw", "documentation"]
 author: "Christoph Biering"
-githubUsername: "cbiering"
+githubUsername: "biering"
 ---
 
 # ACE Workspace Agent — Co-Pilot for Atlas • Calendar • Efforts

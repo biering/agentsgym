@@ -3,7 +3,7 @@ title: "QMD — Local Markdown Search"
 description: "Local Markdown search via qmd (BM25 by default). Cuts token usage by ~95% by retrieving only relevant docs/snippets."
 categories: ["skill", "memory", "documentation", "ops"]
 author: "Christoph Biering"
-githubUsername: "cbiering"
+githubUsername: "biering"
 source: "https://github.com/tobi/qmd"
 ---
 
