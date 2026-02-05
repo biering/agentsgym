@@ -1,10 +1,7 @@
 ---
-title: "QMD — Local Markdown Search"
-description: "Local Markdown search via qmd (BM25 by default). Cuts token usage by ~95% by retrieving only relevant docs/snippets."
-categories: ["skill", "memory", "documentation", "ops"]
-author: "Christoph Biering"
-githubUsername: "biering"
-source: "https://github.com/tobi/qmd"
+name: qmd
+description: Local Markdown search via qmd (BM25 by default). Cuts token usage by ~95% by retrieving only relevant docs/snippets.
+metadata: {"agentsgym":{"title":"QMD — Local Markdown Search","categories":["skill","memory","documentation","ops"],"author":"Christoph Biering","githubUsername":"biering","source":"https://github.com/tobi/qmd"}}
 ---
 
 # QMD Skill — Query Markdown Documents (local search)
@@ -53,4 +50,3 @@ qmd status
 ## Output Format
 - **Top matches**: `path`, `docid`, (score if available), 1-line why.
 - **Best next command**: what to run next (`qmd get …`, add `-c`, raise `-n`, etc.).
-

@@ -1,0 +1,15 @@
+[
+  {
+    "slug": "qmd",
+    "name": "qmd",
+    "description": "Local Markdown search via qmd (BM25 by default). Cuts token usage by ~95% by retrieving only relevant docs/snippets.",
+    "homepage": "https://github.com/tobi/qmd"
+  },
+  {
+    "slug": "ace-workspace-agent",
+    "name": "ace-workspace-agent",
+    "description": "An agent prompt to implement and run the ACE system inside a Git-versioned workspace—create the folder framework, maintain living docs, enforce metadata patterns, and iterate workflows.",
+    "homepage": "https://github.com/biering/agentsgym/tree/main/skills/ace-workspace-agent"
+  }
+]
+

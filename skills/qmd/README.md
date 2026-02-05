@@ -3,7 +3,7 @@
 This skill wraps [`qmd`](https://github.com/tobi/qmd) as a **local search engine for Markdown** so agents can retrieve only the relevant docs/snippets (often **~95% fewer tokens** vs dumping whole folders).
 
 ## Files
-- `SKILL.MD`: the skill prompt (copy/paste into your agent system)
+- `SKILL.md`: the skill prompt (OpenClaw-compatible; copy/paste into your agent system)
 
 ## Quick start
 ```bash

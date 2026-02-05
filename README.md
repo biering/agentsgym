@@ -1,57 +1,46 @@
 # agentsgym
 
-This repo uses `content/` as a simple **Markdown content CRM** for agent prompts (with strict YAML frontmatter). The goal is to keep prompts **diff-friendly**, **searchable**, and easy to remix across projects.
+This repo is a small **Markdown prompt/skills catalog**. The goal is to keep prompts **diff-friendly**, **searchable**, and easy to remix across projects—while keeping skill prompts **OpenClaw-compatible**.
 
 ## Structure
 
-- **`content/`**: prompt notes (one prompt per `.md` file)
 - **`skills/`**: reusable skills (one skill per folder)
-  - `skills/<skill-slug>/SKILL.MD`: the skill prompt (YAML frontmatter + prompt)
+  - `skills/<skill-slug>/SKILL.md`: the skill prompt (**OpenClaw-compatible** frontmatter + prompt)
   - `skills/<skill-slug>/README.md`: short human-facing overview + quick start
-- **`template.md`**: the canonical prompt-note template (copy this when creating new prompts)
+- **`template/`**: templates for new skills
 
-## Metadata (required)
+## Metadata (required for skills)
 
-Every prompt note must start with YAML frontmatter using exactly these fields:
+Every skill prompt must start with YAML frontmatter using at least these fields (OpenClaw-compatible):
 
 ```yaml
 ---
-title: string
+name: string
 description: string
-categories: string[]
-author: string
-githubUsername: string
+metadata: {"agentsgym":{...}}  # single-line JSON; put extra fields here
 ---
 ```
 
-Then the rest of the file is the **prompt content**.
+Then the rest of the file is the **prompt content**. For maximum OpenClaw compatibility, **avoid multi-line YAML structures** in frontmatter (store them inside `metadata` as single-line JSON instead).
 
-## Prompts
+## How to add a new skill
 
-- Example: `content/ace-workspace-agent.md`
-
-## How to add a new prompt
-
-If you're using GitHub in the browser, you can start a new prompt file directly here: [Create a new prompt in `content/`](https://github.com/biering/agentsgym/new/main/content)
-
-1) Copy `template.md` → `content/<your-prompt>.md`
-2) Name the file **kebab-case** (stable names reduce churn in Git diffs)
+1) Copy `template/SKILL.md` → `skills/<skill-slug>/SKILL.md`
+2) Name the folder **kebab-case** (stable names reduce churn in Git diffs)
 3) Fill in frontmatter:
-   - **`title`**: human-readable name
+   - **`name`**: stable skill key (usually the slug)
    - **`description`**: 1-2 sentences, indexable
-   - **`categories`**: choose from `categories.yaml` (e.g. `["workspace","ops","openclaw"]`)
-   - **`author`** / **`githubUsername`**: attribution
-4) Paste the agent prompt below the frontmatter and keep headings stable
+   - **`metadata`**: store `title`, `categories`, attribution, links, etc. as single-line JSON under `metadata.agentsgym`
+4) Paste the skill prompt below the frontmatter and keep headings stable
 
 ## Contributing
 
 PRs are welcome. The bar is “easy to understand + easy to search + easy to diff.”
 
-- **Frontmatter is mandatory**: all five fields must be present, with the correct types.
+- **Frontmatter is mandatory**: `name` and `description` must be present; extra fields go in `metadata` as single-line JSON.
 - **One prompt per file**: keep prompt content self-contained.
 - **Keep it Git-friendly**:
   - Prefer stable filenames and headings
   - Avoid massive rewrites unless necessary
   - Don't add binaries (images, PDFs) unless there's a strong reason
-- **Categories**: use `categories.yaml` and prefer a few broad categories over many overly-specific ones.
-- **Attribution**: keep `author` / `githubUsername` accurate for new prompts or major rewrites.
+- **Categories/Attribution** (recommended): store in `metadata.agentsgym.categories`, `metadata.agentsgym.author`, `metadata.agentsgym.githubUsername`.

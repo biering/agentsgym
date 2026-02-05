@@ -1,10 +1,7 @@
 ---
-title: ""
+name: ""
 description: ""
-categories: []
-author: ""
-githubUsername: ""
-source: ""
+metadata: {"agentsgym":{"title":"","categories":[],"author":"","githubUsername":"","source":""}}
 ---
 
 <!--
@@ -22,7 +19,7 @@ Skill-note tips (recommended structure):
 
 Repo conventions:
 - **Skills** live in `skills/<skill-slug>/` with:
-  - `SKILL.MD` (this template + the actual prompt)
+  - `SKILL.md` (this template + the actual prompt; OpenClaw-compatible frontmatter)
   - `README.md` (short human-facing overview + quick start)
 -->
 
