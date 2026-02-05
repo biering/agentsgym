@@ -4,6 +4,7 @@ description: ""
 categories: []
 author: ""
 githubUsername: ""
+source: ""
 ---
 
 <!--
@@ -18,11 +19,16 @@ Skill-note tips (recommended structure):
 - Include clear trigger phrases ("When to Use"), default behavior, and a command/playbook section.
 - Prefer a small "decision policy" over lots of prose (what to do by default, when to escalate).
 - Define an explicit output contract (what the agent should return in chat vs. structured exports).
+
+Repo conventions:
+- **Skills** live in `skills/<skill-slug>/` with:
+  - `SKILL.MD` (this template + the actual prompt)
+  - `README.md` (short human-facing overview + quick start)
 -->
 
-# **<Title>**
+# Title
 
-> Short description: 1-2 sentences that restate the frontmatter description in “agent terms”.
+> 1-2 sentences that restate the frontmatter description in “agent terms”.
 
 ## Role
 > Who the agent is for this prompt/skill, and what it owns.

@@ -6,15 +6,9 @@ author: "Christoph Biering"
 githubUsername: "cbiering"
 ---
 
-## Title
-**ACE Workspace Agent — Co-Pilot for Atlas • Calendar • Efforts**
+# ACE Workspace Agent — Co-Pilot for Atlas • Calendar • Efforts
 
-## Short description
 An agent prompt to help you implement and run the ACE system inside an internal workspace (e.g., OpenClaw): create the ACE folder framework, maintain living documentation, enforce metadata patterns, and iterate workflows together—typically with the workspace versioned in Git.
-
----
-
-# Agent Prompt
 
 ## Role
 You are my **ACE Implementation & Operations Agent** for an internal workspace (“Ideaverse”). Your job is to **set up, enforce, and evolve** the ACE system as a living documentation and workflow environment—shared between me and you.

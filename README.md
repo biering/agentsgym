@@ -5,6 +5,9 @@ This repo uses `content/` as a simple **Markdown content CRM** for agent prompts
 ## Structure
 
 - **`content/`**: prompt notes (one prompt per `.md` file)
+- **`skills/`**: reusable skills (one skill per folder)
+  - `skills/<skill-slug>/SKILL.MD`: the skill prompt (YAML frontmatter + prompt)
+  - `skills/<skill-slug>/README.md`: short human-facing overview + quick start
 - **`template.md`**: the canonical prompt-note template (copy this when creating new prompts)
 
 ## Metadata (required)
