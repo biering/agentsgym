@@ -1,3 +1,4 @@
+---
 name: Publish agentsgym to npm
 
 on:
@@ -41,4 +42,3 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npm publish --provenance --access public
-

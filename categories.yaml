@@ -1,3 +1,4 @@
+---
 schemaVersion: 1
 lastUpdated: "2026-02-03"
 
@@ -52,4 +53,3 @@ categories:
   - slug: security
     title: Security
     description: Threat modeling, secure practices, privacy, and access control.
-
