@@ -19,14 +19,19 @@
   "scripts": {
     "dev": "nitro dev",
     "build": "nitro build",
-    "preview": "nitro preview"
+    "preview": "nitro preview",
+    "format": "biome format --check",
+    "format:fix": "biome format --write",
+    "lint": "biome lint --write",
+    "lint:fix": "biome lint --write",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "nitropack": "^2.12.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.3.14",
     "@types/node": "^22.0.0",
     "typescript": "^5.0.0"
   }
 }
-
