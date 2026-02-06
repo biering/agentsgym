@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url'
 export default defineNitroConfig({
   compatibilityDate: 'latest',
   srcDir: './server',
+  preset: 'node_server',
   imports: {
     dirs: ['utils'],
   },
